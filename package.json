@@ -1,0 +1,40 @@
+{
+  "name": "soccergraph",
+  "version": "1.0.0",
+  "description": "A lightweight JavaScript library for visualizing soccer game data, inspired by 'mlp soccer' in Python. This library provides tools for rendering soccer fields, player and ball movements, and action trajectories, using easy-to-use methods and modular components. Ideal for sports analytics and interactive data visualization projects.",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarrysCTB/SoccerGraph.js.git"
+  },
+  "keywords": [
+    "soccer",
+    "visualization",
+    "sports",
+    "data-visualization",
+    "javascript-library",
+    "soccer-field",
+    "soccer-analytics",
+    "trajectory",
+    "player-movements",
+    "sports-analytics",
+    "mlpsoccer",
+    "football",
+    "ball",
+    "graph",
+    "graphic"
+  ],
+  "author": "Elarif Inzoudine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HarrysCTB/SoccerGraph.js/issues"
+  },
+  "homepage": "https://github.com/HarrysCTB/SoccerGraph.js#readme"
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Graph Example</title>
+    <style>
+        .card {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        #container {
+            position: relative;
+            width: 100%;
+        }
+
+        #tooltip {
+            position: absolute;
+            display: none;
+            padding: 5px;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>Bubble Graph Example</h1>
+    <div id="container">
+        <svg id="soccer-field" width="566" height="755"></svg>
+        <div id="tooltip"></div>
+    </div>
+</div>
+
+<script src="../dist/soccer-graph.min.js"></script>
+
+<script>
+
+    const shotData = [
+        { x: 20, y: 30, xG: 0.2, type: 'missed' },
+        { x: 50, y: 60, xG: 0.5, type: 'goal' },
+        { x: 35, y: 45, xG: 0.8, type: 'saved' }
+    ];
+
+    const config = {
+        type: 'bubble',
+        data: shotData,
+        options: { selector: '#soccer-field' }
+    };
+
+    const bubbleGraph = soccerGraph.createGraph(config);
+
+    document.addEventListener('click', () => bubbleGraph.destroy());
+</script>
+
+</body>
+</html>
